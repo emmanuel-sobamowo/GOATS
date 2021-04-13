@@ -1,27 +1,15 @@
 import React, {useState} from 'react'
 
-
-function Greeting(){
-    const [username, setUsername] = useState('')
-    const [nameInput, setNameInput] = useState('')
-
-
-const handleInput = e => setNameInput(e.target.value)
-
-const handleFormSubmit = e => {
-e.preventDefault()
-setUsername(nameInput)
-setNameInput('')
-}
+const Welcome = ({name, nameInput, handleInput, handleFormSubmit}) => {
     
     return (
         <>
-        <h3 aria-label='greeting' id='greeting'>Helllooo, {username ? username : 'username'}! </h3>
         <form onSubmit={handleFormSubmit}>
             <label htmlFor="username"> Username </label>
             <input type="text" name="username" id="username" placeholder="Enter your name"  onChange={handleInput}/>
             <input type="submit" value="update" />
         </form>
+        <h5 aria-label="welcome" id="welcome">Here are some of our songs, {name ? name : 'stranger'}:</h5>       
         </>
 
     )

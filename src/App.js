@@ -5,6 +5,15 @@ import {Greeting, Albums, Artists, Header} from './components'
 function App(){
     return (
         <>
+            <Homepage />
+        </>
+    );
+}
+
+
+export default App
+
+{/*         
         <div className="container">
 
 
@@ -13,11 +22,5 @@ function App(){
     
             <Artists />
             <Albums />
-        </div>
+        </div> */}
         
-        </>
-    );
-}
-
-
-export default App
