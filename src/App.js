@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {Greeting, Albums, Artists, Header} from './components'
+import {Greeting, Artists, Header} from './components'
+import { Homepage} from './pages'
 
 function App(){
     return (
@@ -13,14 +14,3 @@ function App(){
 
 export default App
 
-{/*         
-        <div className="container">
-
-
-            <Header />
-            <Greeting />
-    
-            <Artists />
-            <Albums />
-        </div> */}
-        
